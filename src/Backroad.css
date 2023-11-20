@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue; 
+    font-family: sans-serif;
+    scroll-behavior:smooth;
+}
+/* Navbar Styling */
+.nav-bar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background: white;
+}
+h2 span{
+    color: aqua;
+}
+ul{
+    display: flex;
+
+}
+li{
+
+    list-style: none;
+    margin-left: 1em;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: lightblue;
+}
+.nav-img li{
+    display: flex;
+    gap: 1em;
+}
+.img-logo{
+    width: 20px;
+}
+
+/* Home Styling */
+.section1{
+    height: 100vh;
+    background: cadetblue
+ }
+.sub-section1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: auto;
+    color:white;
+}
+h1{
+    text-align: center;
+    font-size: 5.1vw;
+}
+.text1{
+    text-align: center;
+    margin-top: .5em;
+    font-size: .85em;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+button{
+    padding: .5em 1em;
+    color: cadetblue;
+}
+
+/* About Styling */
+.about-section{
+    background: white;
+}
+.main-cont-about{
+    /* max-width: 800px; */
+    /* width: 90%; */
+    /* display: flex; */
+    /* margin: auto; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 2em 0;
+}
+.about-title{
+    text-align: center;
+    margin-bottom: 2em;
+}
+h2 span{
+    color: cadetblue;
+}
+.sub-cont-about{
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    gap: 1em;
+    margin: auto;
+    justify-content: center;
+}
+.beach-cont{
+    width: 50%;
+}
+.beach-pic{
+    width: 100%;
+}
+.about-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.about-info p{
+    margin-top: .5em;
+}
+.readmore-btn-cont{
+    margin-top: .5em;
+}
+.readmore-btn{
+    border: none;
+    background: cadetblue;
+    color: white;
+}
+
+
+/* Service Styling */
+.service-section{
+    padding: 2em 0;
+    background: rgb(224, 236, 240);
+}
+.service-main-cont{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    max-width: 300px;
+    display: flex;
+    gap: .5em;
+}
+.save-cont{
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+}
+.save{
+    width: 20px;
+}
+.save-info p{
+    font-size: .75em;
+}
+
+/* Tours Styling */
+.tour-section{
+    padding: 2em 0;
+
+}
+
+.tour-main-cont{
+    min-width: 500px;
+    display: grid;
+    place-content:center;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+}
+.tour-item{
+    display: flex;
+    flex-direction: column;
+    background: rgb(204, 202, 202);
+}
+.box{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.beach-pic1{
+    width: 100%;
+    height: 100%;
+}
+.box p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: cadetblue;
+    padding: .2em .3em;
+    font-size: .75em;
+}
+.tour-info{
+    width: 250px;
+    padding: 1em;
+}
+.tour-info p{
+    margin-top:.5em;
+}
+.tour-icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: .75rem;
+    margin-top: 1em;
+}
+.country, .days, .amount{
+    color: cadetblue;
+
+}
+
+.country span, .days span, .amount span{
+    margin-right: .3em;
+}
+
+@media(max-width:700px){
+    .tour-main-cont{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 2em ;
+    }
+    .tour-info{
+        width: 100%;
+    }
+
+}
+@media(max-width:500px){
+    .tour-main-cont{
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+    .tour-item{
+        width: 70%;
+    }
+}
+
+/* Footer Styling */
+.footer-section{
+    padding: 2em;
+    background: rgba(2, 2, 51, 0.808);
+    color: white;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+}
+.footer-link{
+    color: white;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.footer-text{
+    text-align: center;
+    margin-top: 1em;
+}
